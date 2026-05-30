@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "crackmod2",
+	"version": "${version}",
+	"name": "Crackmod II",
+	"description": "Realistic Drug Mod with nicotin, alcohol and more with realistic recipes",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/crackmod2/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"micro.crack2.CrackmodII"
+		],
+		"fabric-datagen": [
+			"micro.crack2.CrackmodIIDataGenerator"
+		],
+		"client":[
+			"micro.crack2.CrackmodIIClient"
+		]
+	},
+	"mixins": [
+		"crackmod2.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
